@@ -7,14 +7,18 @@ use Illuminate\Http\Request;
 class TableController extends Controller
 {
    
-    public function table()
+    public function index()
     {
         $Allposts = [
             ['id'=>1,'title'=>'First Post','content'=>'This is the content of the first post.'],
             ['id'=>2,'title'=>'Second Post','content'=>'This is the content of the second post.'],
             ['id'=>3,'title'=>'Third Post','content'=>'This is the content of the third post.']
         ];
-        return view('table', ['posts' => $Allposts]);
+        return view('index', ['posts' => $Allposts]);
     }
-          
+    
+    public function show()
+    {
+        return view('show');
+    }
 }

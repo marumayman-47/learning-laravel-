@@ -24,8 +24,8 @@
   </div>
 </nav>
 
-<div>
-    <button type="button" class="btn btn-success mt-4">add row</button>
+<div class="mt-4">
+    <button type="button" class="btn btn-success">add row</button>
 </div>
 
     <div class="container mt-5">
@@ -46,7 +46,7 @@
                     <td>{{ $p['content'] }}</td>
                     <td>
                         <button type="button" class="btn btn-primary">edit</button>
-                        <button type="button" class="btn btn-success">view</button>
+                        <a href="{{ route('posts.show') }}" class="btn btn-success">view</a>
                         <button type="button" class="btn btn-danger">delete</button>
                     </td>
                 </tr>

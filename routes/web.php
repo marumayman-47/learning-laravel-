@@ -7,4 +7,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/table', [TableController::class, 'table']);
+Route::get('/index', [TableController::class, 'index'])->name('posts.index');
+Route::get('/show', [TableController::class, 'show'])->name('posts.show');
