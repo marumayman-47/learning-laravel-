@@ -8,4 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/index', [TableController::class, 'index'])->name('posts.index');
+Route::get('/create', [TableController::class, 'create'])->name('posts.create');
 Route::get('/show', [TableController::class, 'show'])->name('posts.show');

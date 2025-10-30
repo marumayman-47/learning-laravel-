@@ -7,6 +7,9 @@
 @section('content')
 @section('title', 'Posts Table')
     <div class="container mt-5">
+      <div class="mb-4">
+        <a href="{{route ('posts.create')}}" type="button" class="btn btn-info">create post</a>
+      </div>
         <table class="table table-bordered">
             <thead>
                 <tr>

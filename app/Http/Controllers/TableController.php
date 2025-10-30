@@ -19,6 +19,18 @@ class TableController extends Controller
     
     public function show()
     {
-        return view('show');
+        $SinglePost = [
+            'id' => 1,
+            'title' => 'First Post',
+            'content' => 'This is the content of the first post.',
+            'created_at' => '2024-01-01 10:00:00',
+            'created_by' => 'Ahmed'
+        ];
+        return view('show', ['post' => $SinglePost]);
+    }
+    
+    public function create()
+    {
+        return view('create');
     }
 }
