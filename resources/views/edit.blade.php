@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('title', 'create Posts')
+@section('title', 'edit Posts')
 @section('content')
     <div class="container mt-5">
-      <h2>Create Post</h2>
+      <h2>edit Post</h2>
       <form action="{{route('posts.store')}}" method="POST">
         @csrf
         <div class="mb-3">
@@ -21,7 +21,7 @@
                 <option class="form-control" value="3">User 3</option>
             </select>
         </div>
-        <a href=" {{route ('posts.index')}}" type="submit" class="btn btn-primary">Submit</a>
+        <a href=" {{route ('posts.index')}}" type="submit" class="btn btn-primary">update</a>
       </form>
     </div>
 @endsection

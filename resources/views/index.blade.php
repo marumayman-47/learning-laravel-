@@ -26,7 +26,7 @@
                     <td>{{ $p['title'] }}</td>
                     <td>{{ $p['content'] }}</td>
                     <td>
-                        <button type="button" class="btn btn-primary">edit</button>
+                        <a href="{{ route('posts.edit') }}" class="btn btn-primary">edit</a>
                         <a href="{{ route('posts.show') }}" class="btn btn-success">view</a>
                         <button type="button" class="btn btn-danger">delete</button>
                     </td>

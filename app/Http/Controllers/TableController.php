@@ -28,9 +28,23 @@ class TableController extends Controller
         ];
         return view('show', ['post' => $SinglePost]);
     }
-    
+
     public function create()
     {
         return view('create');
+    }
+
+    public function store()
+    {
+        $_request=request();
+        dd($_request->all());
+        // $data=request()->all();
+
+        return redirect()->route('posts.index');
+    }
+
+    public function edit()
+    {
+        return view('edit');
     }
 }
